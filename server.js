@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Serve static files from the 'lib/Screens' directory
-app.use(express.static(path.join(__dirname, 'lib', 'Screens')));
+app.use(express.static(path.join(__dirname, 'lib')));
 
 // Serve the HTML file
 app.get('/', (req, res) => {
