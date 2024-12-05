@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 // Serve the HTML file
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'lib', 'HomePage.html'));
+    res.sendFile(path.join(__dirname, 'lib', 'Screens', 'HomePage.html'));
 });
 
 // Start the server
