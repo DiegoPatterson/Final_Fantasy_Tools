@@ -40,6 +40,17 @@
             margin: 0 5px; /* Spacing between links */
         }
 
+        img {
+            max-width: 100%;
+            height: auto; /* Maintain aspect ratio */
+        }
+        
+        .tuliyollal-map {
+        height: 900px;
+        width: auto; /* Maintain aspect ratio */
+        object-fit: contain; /* Ensure the image scales correctly */
+    }
+
         nav a {
             color: white;
             text-decoration: none;
@@ -103,13 +114,13 @@
         </p>
         <br>
         <h2> World Maps</h2>
-        <img src="..\assets\images\Eorzea.jpg" width="1500px" alt="Map Pre Dawntrail">
+        <img src="..\assets\images\Eorzea.jpg" alt="Map Pre Dawntrail">
         <p>Map of the three great continents</p>
         <br>
-        <img src="..\assets\images\Tuliyollal.png" height="900px" alt="">
+        <img src="../assets/images/Tuliyollal.png" class="tuliyollal-map" alt="Map of the Tuliyollal continent">
         <p>Map of the Tuliyollal continent</p>
         <br>
-        <img src="..\assets\images\Norvrandt_map.jpg" width="1500px" alt="">
+        <img src="..\assets\images\Norvrandt_map.jpg" alt="">
         <p>Map of the Norvrandt continent</p>
         <br>
         <br><br><br>
