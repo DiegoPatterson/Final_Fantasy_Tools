@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobi General Tools | Services | DPS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 2;
+        }
+
+        header {
+            background-image: image-set("../../../assets/images/Eorzea.jpg" 1x, "../../../assets/images/Eorzea.jpg" 2x, "../../../assets/images/Eorzea.jpg" 3x);
+            color: rgb(255, 255, 255);
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Black outline */
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        /* New styles for the second nav bar */
+        .secondary-nav {
+            background-color: #575757; /* Slightly lighter background */
+            font-size: 0.9em; /* Smaller font size */
+            padding: 2px; /* Padding for better spacing */
+        }
+
+        .secondary-nav a {
+            margin: 0 5px; /* Spacing between links */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
+
+        .dps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            
+        }
+
+        .dps-item {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            background-color: rgb(255, 210, 210);
+        }
+
+        .dps-item h3 {
+            margin: 10px 0;
+        }
+
+        .dps-item p {
+            padding: 0 10px 10px;
+        }
+
+        .class-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            padding: 10px;
+            border-top: 1px  #ccc;
+            background-color: rgb(255, 210, 210);
+        }
+
+        .class-container img {
+            width: 50px; /* Adjust the width as needed */
+            height: auto;
+        }
+
+        .class-container h4 {
+            margin: 4;
+            flex: 1;
+            text-align: center;
+        }
+
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            color: #333;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Tobi General Tools</h1>
+    </header>
+
+    <nav>
+        <a href="../../HomePage.html">Home</a>
+        <a href="../../AboutPage.html">About</a>
+        <a href="../../ServicePage.html"><strong>Services</strong></a>
+        <a href="../../MorePage.html">More</a>
+    </nav>
+    <nav class="secondary-nav">
+        <a href="CraftingClassHome.html">Crafting</a>
+        <a href="GatheringClassHome.html">Gathering</a>
+        <a href="DPSClassHome.html"><strong>DPS</strong></a>
+        <a href="HealerClassHome.html">Healer</a>
+        <a href="TankClassHome.html">Tank</a>
+        <a href="../RaidingHome.html">Raiding</a>
+        <a href="../OceanFishingHome.html">Ocean Fishing</a>
+        <a href="../FishTypesHome.html">Fish Types</a>
+    </nav>
+    
+    <div class="main-content">
+        <h2>DPS Classes</h2>
+        <p>Welcome to the DPS page. Here you can find a list of DPS Services we offer.</p>
+        <div class="dps-grid">
+            <div class="dps-item">
+                <img src="../../../assets/images/MeleeDPSIcon.png" alt="Melee DPS">
+                <h3>Melee DPS</h3>
+                <p>Melee DPS specialize in getting up close and personal with the bosses, 
+                    often times incorporating positionals to increase damage</p>
+                <br>
+                <a class="class-container" href="../Classes/DPS/Melee/DragoonClass.html">
+                    <img src="../../../assets/images/Classes/DPS/Melee/Dragoon.png" alt="Dragoon Role Link">
+                    <h4>Dragoon</h4>
+                </a>
+                <a class="class-container" href="../Classes/DPS/Melee/MonkClass.html">
+                    <img src="../../../assets/images/Classes/DPS/Melee/Monk.png" alt="Monk Role Link">
+                    <h4>Monk</h4>
+                </a>
+                <a class="class-container" href="../Classes/DPS/Melee/NinjaClass.html">
+                    <img src="../../../assets/images/Classes/DPS/Melee/Ninja.png" alt="Ninja Role Link">
+                    <h4>Ninja</h4>
+                </a>
+                <a class="class-container" href="../Classes/DPS/Melee/ReaperClass.html">
+                    <img src="../../../assets/images/Classes/DPS/Melee/Reaper.png" alt="Reaper Role Link">
+                    <h4>Reaper</h4>
+                </a>
+                <a class="class-container" href="../Classes/DPS/Melee/SamuraiClass.html">
+                    <img src="../../../assets/images/Classes/DPS/Melee/Samurai.png" alt="Samurai Role Link">
+                    <h4>Samurai</h4>
+                </a>
+                <a class="class-container" href="../Classes/DPS/Melee/ViperClass.html">
+                    <img src="../../../assets/images/Classes/DPS/Melee/Viper.png" alt="Viper Role Link">
+                    <h4>Viper</h4>
+                </a>
+
+            </div>
+            <div class="dps-item">
+                <img src="../../../assets/images/RangedDPSIcon.png" alt="Ranged DPS">
+                <h3>Ranged DPS</h3>
+                <p>Ranged DPS jobs often times have a more supportive aspect to them. 
+                    They offer the team utility as well as strong burst windows.</p>
+                <br>
+                <a class="class-container" href="../Classes/DPS/Ranged/BardClass.html">
+                    <img src="../../../assets/images/Classes/DPS/Ranged/Bard.png" alt="Bard Role Link">
+                    <h4>Bard</h4>
+                </a>
+                <a class="class-container" href="../Classes/DPS/Ranged/DancerClass.html">
+                    <img src="../../../assets/images/Classes/DPS/Ranged/Dancer.png" alt="Dancer Role Link">
+                    <h4>Dancer</h4>
+                </a>
+                <a class="class-container" href="../Classes/DPS/Ranged/MachinistClass.html">
+                    <img src="../../../assets/images/Classes/DPS/Ranged/Machinist.png" alt="Machinist Role Link">
+                    <h4>Machinist</h4>
+                </a>
+            </div>
+            <div class="dps-item">
+                <img src="../../../assets/images/MagicDPSIcon.png" alt="Magic DPS">
+                <h3>Magic DPS</h3>
+                <p>Magical DPS is a high damaging slow cast class. You will have to 
+                    juggle keeping track of cast times, using burst windows and dodging boss attacks.</p>
+                <br>
+                <a class="class-container" href="../Classes/DPS/Mage/BlackMageClass.html">
+                    <img src="../../../assets/images/Classes/DPS/Magic/BlackMage.png" alt="Black Mage Role Link">
+                    <h4>Black Mage</h4>
+                </a>
+                <a class="class-container" href="../Classes/DPS/Mage/RedMageClass.html">
+                    <img src="../../../assets/images/Classes/DPS/Magic/RedMage.png" alt="Red Mage Role Link">
+                    <h4>Red Mage</h4>
+                </a>
+                <a class="class-container" href="../Classes/DPS/Mage/SummonerClass.html">
+                    <img src="../../../assets/images/Classes/DPS/Magic/Summoner.png" alt="Summoner Role Link">
+                    <h4>Summoner</h4>
+                </a>
+                <a class="class-container" href="../Classes/DPS/Mage/PictomancerClass.html">
+                    <img src="../../../assets/images/Classes/DPS/Magic/Pictomancer.png" alt="Pictomancer Role Link">
+                    <h4>Pictomancer</h4>
+                </a>
+                <a class="class-container" href="../Classes/DPS/Mage/BlueMageClass.html">
+                    <img src="../../../assets/images/Classes/DPS/Magic/BlueMage.png" alt="BlueMage Role Link">
+                    <h4>Blue Mage</h4>
+                </a>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>2024 Final Fantasy XIV Tools. Please Dont Steal.</p>
+    </footer>
+
+</body>
+
+</html>
