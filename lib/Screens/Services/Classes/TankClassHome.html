@@ -51,9 +51,55 @@
             border-radius: 4px;
         }
 
+        .tank-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            
+        }
+
+        .tank-item {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            background-color: rgb(210, 218, 255);
+        }
+
+        .tank-item h3 {
+            margin: 10px 0;
+        }
+
+        .tank-item p {
+            padding: 0 10px 10px;
+        }
+
+        .class-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            padding: 10px;
+            border-top: 1px  #ccc;
+            background-color: rgb(211, 210, 255);
+        }
+
+        .class-container img {
+            width: 50px; /* Adjust the width as needed */
+            height: auto;
+        }
+
+        .class-container h4 {
+            margin: 4;
+            flex: 1;
+            text-align: center;
+        }
+
         .main-content {
             padding: 20px;
             text-align: center;
+            padding-bottom: 80px;
         }
 
         footer {
@@ -94,6 +140,43 @@
     <div class="main-content">
         <h2>Tank Classes</h2>
         <p>Welcome to the Tank page. Here you can find a list of Tank Services we offer.</p>
+        <div class="tank-grid">
+            <div class="tank-item">
+                <img src="../../../assets/images/Classes/Tank/DarkKnight.png" alt="Dark Knight">
+                <h3>Dark Knight</h3>
+                <p>Dark Knight is the Edgy magic based tank. It has one of the highest burst windows 
+                    out of all the tanks and the highest magic mitigation in the game. It doesnt do 
+                    well into physical damage bosses, but when against a magic damage boss, it is able 
+                    to shine.</p>
+                <br>
+            </div>
+            <div class="tank-item">
+                <img src="../../../assets/images/Classes/Tank/GunBreaker.png" alt="Gun Breaker">
+                <h3>Gun Breaker</h3>
+                <p>Gun Breaker is the physical damage tank. It makes use of a parry mechanic that can 
+                    nullify incoming damage from physical based attacks. With a large burst window, this 
+                    tank excels in its select fields.</p>
+                <br>
+            </div>
+            <div class="tank-item">
+                <img src="../../../assets/images/Classes/Tank/Paladin.png" alt="Paladin">
+                <h3>Paladin</h3>
+                <p>Paladin is the classic tank that most people think of when thinking tank. It carrys a big 
+                    shild that allows it to natrually have more starting mitigation from any other tank. Likewise,
+                    It also has many healing mechanics and gaurding mechanics to protect and keep your team alive.
+                    If you want to be a team player and still have good general mitigation, this is the way to go.</p>
+                <br>
+            </div>
+            <div class="tank-item">
+                <img src="../../../assets/images/Classes/Tank/Warrior.png" alt="Warrior">
+                <h3>Warrior</h3>
+                <p>Warrior is the high health, high damage, high healing tank. Despite having many mitigation tools in its kit,
+                    the warrior is known for making using of self healing abilities to keep itself alive. Often times, this tank
+                    can do well on its own even without a healer present. Like wise, it has a massive damage output and easy rotation.
+                    If you want to be a tank that can do it all, this is the tank for you.
+                </p>
+                <br>
+            </div>
     </div>
 
     <footer>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tobi General Tools</title>
+    <script defer src="../Search.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -35,14 +36,35 @@
             padding: 8px 16px;
         }
 
-        nav a:hover {
-            background-color: #575757;
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-container input[type="text"] {
+            padding: 5px;
+            border: none;
             border-radius: 4px;
+        }
+
+        .search-container button {
+            padding: 5px 10px;
+            margin-left: 5px;
+            border: none;
+            border-radius: 4px;
+            background-color: #575757;
+            color: white;
+            cursor: pointer;
+        }
+
+        .search-container button:hover {
+            background-color: #444;
         }
 
         .main-content {
             padding: 20px;
             text-align: center;
+            padding-bottom: 80px;
         }
 
         footer {
@@ -69,6 +91,14 @@
         <a href="ServicePage.html">Services</a>
         <a href="MorePage.html">More</a>
     </nav>
+    <nav>
+        <div class="search-container">
+            <form id="search-form">
+                <input type="text" placeholder="Search..." name="query" id="search-input">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+</nav>
 
     <div class="main-content">
         <h1>Here To Help</h1>
@@ -82,9 +112,7 @@
             offer. </p>
         <p>Now, lets go together into this new chapter.</p>
         <p> <img src="..\assets\images\Onward.png" alt="point to new lands"> </p>
-        <br><br>
     </div>
-
 
     <footer>
         <p>2024 Final Fantasy XIV Tools. Please Dont Steal.</p>
@@ -93,3 +121,4 @@
 </body>
 
 </html>
+

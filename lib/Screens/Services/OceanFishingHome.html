@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tobi General Tools | Services | Ocean Fishing</title>
+    <title>Ocean Fishing Routes and Guides</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -29,31 +29,32 @@
             padding: 10px 0;
         }
 
-        /* New styles for the second nav bar */
-        .secondary-nav {
-            background-color: #575757; /* Slightly lighter background */
-            font-size: 0.9em; /* Smaller font size */
-            padding: 2px; /* Padding for better spacing */
-        }
-
-        .secondary-nav a {
-            margin: 0 5px; /* Spacing between links */
-        }
-
         nav a {
             color: white;
             text-decoration: none;
             padding: 8px 16px;
         }
 
-        nav a:hover {
-            background-color: #575757;
-            border-radius: 4px;
-        }
-
         .main-content {
             padding: 20px;
             text-align: center;
+        }
+
+        .map-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .map-item {
+            max-width: 45%;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .map-item img {
+            width: 100%;
+            height: auto;
         }
 
         footer {
@@ -64,34 +65,6 @@
             position: fixed;
             bottom: 0;
             width: 100%;
-        }
-
-        /* New styles for the fish list */
-        .fish-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .fish-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 20px;
-            width: calc(33.333% - 20px); /* Three items per row */
-        }
-
-        .fish-item img {
-            margin-right: 10px;
-            width: 100px; /* Adjust the width as needed */
-            height: auto;
-        }
-
-        .fish-details {
-            max-width: 600px; /* Adjust the width as needed */
-        }
-
-        .fish-details h3 {
-            margin: 0;
         }
     </style>
 </head>
@@ -121,7 +94,20 @@
     
     <div class="main-content">
         <h2>Ocean Fishing Routes and Guides</h2>
-        
+        <div class="map-container">
+            <div class="map-item">
+                <h3>Indigo Route</h3>
+                <a href="https://ffxiv.pf-n.co/ocean-fishing?route=indigo" target="_blank">
+                    <img src="../../assets/images/IndigoRoute.png" alt="Indigo Route">
+                </a>
+            </div>
+            <div class="map-item">
+                <h3>Ruby Route</h3>
+                <a href="https://ffxiv.pf-n.co/ocean-fishing?route=ruby" target="_blank">
+                    <img src="../../assets/images/RubyRoute.png" alt="Ruby Route">
+                </a>
+            </div>
+        </div>
     </div>
 
     <footer>

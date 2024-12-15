@@ -12,7 +12,7 @@
             padding: 0;
             line-height: 2;
         }
-
+    
         header {
             background-image: image-set("../../../assets/images/Eorzea.jpg" 1x, "../../../assets/images/Eorzea.jpg" 2x, "../../../assets/images/Eorzea.jpg" 3x);
             color: rgb(255, 255, 255);
@@ -20,7 +20,7 @@
             padding: 20px;
             text-align: center;
         }
-
+    
         nav {
             background-color: #333;
             color: white;
@@ -28,34 +28,64 @@
             justify-content: space-around;
             padding: 10px 0;
         }
-
-        /* New styles for the second nav bar */
-        .secondary-nav {
-            background-color: #575757; /* Slightly lighter background */
-            font-size: 0.9em; /* Smaller font size */
-            padding: 2px; /* Padding for better spacing */
-        }
-
-        .secondary-nav a {
-            margin: 0 5px; /* Spacing between links */
-        }
-
+    
         nav a {
             color: white;
             text-decoration: none;
             padding: 8px 16px;
         }
-
-        nav a:hover {
-            background-color: #575757;
-            border-radius: 4px;
-        }
-
+    
         .main-content {
             padding: 20px;
             text-align: center;
+            padding-bottom: 80px;
         }
-
+    
+        .healer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: center; /* Center the grid items horizontally */
+        }
+    
+        .healer-item {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            background-color: rgb(212, 255, 210);
+        }
+    
+        .healer-item h3 {
+            margin: 10px 0;
+        }
+    
+        .healer-item p {
+            padding: 0 10px 10px;
+        }
+    
+        .class-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+            background-color: rgb(255, 210, 210);
+        }
+    
+        .class-container img {
+            width: 50px; /* Adjust the width as needed */
+            height: auto;
+        }
+    
+        .class-container h4 {
+            margin: 0;
+            flex: 1;
+            text-align: center;
+        }
+    
         footer {
             background-color: #f1f1f1;
             color: #333;
@@ -94,7 +124,47 @@
     <div class="main-content">
         <h2>Healer Classes</h2>
         <p>Welcome to the Healer page. Here you can find a list of Healer Services we offer.</p>
+        <div class="healer-grid">
+            <div class="healer-item">
+                <img src="../../../assets/images/Classes/Healer/Astrologian.png" alt="Astrologian">
+                <h3>Astrologian</h3>
+                <p>Astrologian is a healer with a lot of utility to help it's team in more than just healing. 
+                    With its card system, it can buff its team and ensure that the fight does not go on for too long.
+                    With a large rotation and random elements, Astrologian can be a difficult class to start out with,
+                    but if you put the time in, it can be one of the best classes to main.</p>
+                </p>
+                <br>
+            </div>
+            <div class="healer-item">
+                <img src="../../../assets/images/Classes/Healer/Sage.png" alt="Sage">
+                <h3>Sage</h3>
+                <p>Sage is a shild healer as well as a battle healer. The mindset of sage is, killing the boss faster is a 
+                    form of mitigation. This class offers shields to its allies. Though it does have healing spells, its main source 
+                    of healing is from a spell that converts damage it does into healing for its designated partner. If you are 
+                    looking into healing but still like big damage, this is the healer for you.</p>
+                <br>
+            </div>
+            <div class="healer-item">
+                <img src="../../../assets/images/Classes/Healer/Scholar.png" alt="Scholar">
+                <h3>Scholar</h3>
+                <p>Have you ever thought that no matter how much healing you yourself does, your team mates are still taking too much damage.
+                    Thats where this class comes in. Scholar is a healer that has a summon who can heal in its place. This allows the scholar
+                    to do damage when it needs to but also double up on healing for when the team needs it. This class is great for those who
+                    are just getting into healing and need a little extra help.</p>
+                <br>
+            </div>
+            <div class="healer-item">
+                <img src="../../../assets/images/Classes/Healer/WhiteMage.png" alt="White Mage">
+                <h3>White Mage</h3>
+                <p>White Mage is the classic no damgage only healing class. It has the largest healing output of all the healers and is the 
+                    easiest to learn. This healer is perfect for raids where you need to keep the team alive and dont have time to do damage.
+                    If you are looking for a simple healer that can keep the team alive, this is the healer for you.
+
+                </p>
+                <br>
+            </div>
     </div>
+    
 
     <footer>
         <p>2024 Final Fantasy XIV Tools. Please Dont Steal.</p>

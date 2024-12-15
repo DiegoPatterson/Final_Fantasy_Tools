@@ -66,32 +66,10 @@
             width: 100%;
         }
 
-        /* New styles for the fish list */
-        .fish-list {
+        .raid-list {
             display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .fish-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 20px;
-            width: calc(33.333% - 20px); /* Three items per row */
-        }
-
-        .fish-item img {
-            margin-right: 10px;
-            width: 100px; /* Adjust the width as needed */
-            height: auto;
-        }
-
-        .fish-details {
-            max-width: 600px; /* Adjust the width as needed */
-        }
-
-        .fish-details h3 {
-            margin: 0;
+            justify-content: space-around;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -121,7 +99,32 @@
     
     <div class="main-content">
         <h2>Raids and Strategies</h2>
-        
+        <p>Raiding is a big part of Final Fantasy. It comes in many difficulties, both for casuals and high end raiders.
+            The many challenges that the game offers are a great way to test your skills and teamwork. 
+        <div class="raid-list">
+            <div class="raid-item">
+                <h3>Normal</h3>
+                <p>Normal Raids are the casual tier of raiding. Most of them you simply come accross while 
+                    doing the main story and apart from a few, all are easily clearable by most players and 
+                    dont need setup time to do</p>
+                <a href="Raids/NormalHome.html"><img src="../../assets/images/Raids/Easy.png" alt="Normal Raids" width="200" height="200"></a>
+
+            </div>
+            <div class="raid-item">
+                <h3>Savage</h3>
+                <p>Savage Raids are the mid tier of raiding. They are harder than normal raids and require a bit 
+                    more coordination and skill to clear. They are a great way to test your skills and teamwork</p>
+                <a href="Raids/SavageHome.html"><img src="../../assets/images/Raids/Medium.png" alt="Savage Raids" width="200" height="200"></a>
+
+            </div>
+            <div class="raid-item">
+                <h3>Ultimate</h3>
+                <p>Ultimate Raids are the high end tier of raiding. They are the hardest content in the game and 
+                    require a lot of coordination and skill to clear. They are a great way to test your skills and 
+                    teamwork</p>
+                <a href="Raids/UltimateHome.html"><img src="../../assets/images/Raids/Hard.png" alt="Ultimate Raids" width="200" height="200"></a>
+            </div>
+        </div>
     </div>
 
     <footer>
